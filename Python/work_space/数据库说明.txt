@@ -1,0 +1,19 @@
+Running migrations: No migrations to apply.（django不能创建数据库中的表的问题）
+
+第一步：
+
+    删除该app名字下的migrations下的__init__.py等文件。
+
+第二步：
+
+    进入数据库，找到django_migrations的表，删除该app名字的所有记录。
+
+第三步：执行下面这两条命令：（在项目目录下）
+   
+python manage.py makemigrations
+python manage.py migrate
+
+原因：
+
+django_migrations表记录着数据库的对应表的修改记录。
+每次修改后，都执行第三步的命令，然后在第一步的文件夹下生成修改的文件，django_migrations表记录修改的变更过程。
