@@ -14,7 +14,9 @@ import random
 class MyTest(unittest.TestCase):
 
 	def setUp(self):
-		self.driver = webdriver.Chrome()
+		chromedriver = "C:\Users\Haibo\AppData\Local\Google\Chrome\Application\chromedriver.exe"
+		os.environ["webdriver.chrome.driver"] = chromedriver
+		self.driver = webdriver.Chrome(chromedriver)
 		self.driver.implicitly_wait(30)
 		self.url = "https://saas.mei1.com"
 		self.verificationErrors = []

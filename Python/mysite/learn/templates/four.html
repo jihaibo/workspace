@@ -1,0 +1,8 @@
+{% for item in List %}
+	{{ item }}{% if not forloop.last %},{% endif %}
+{% endfor %}
+<!--
+ forloop.last判断
+ 不是最后一项就加逗号（，）
+ 是最后一项就不加
+-->
