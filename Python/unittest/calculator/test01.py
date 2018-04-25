@@ -10,15 +10,15 @@ import unittest
 class TestCount(unittest.TestCase):
 
 	def setUP(self):
-		print ("test start")
+		print ("basemanage start")
 
 	def test_add(self):
 		j = Count(2,3)
 		self.assertEqual(j.add(),5)
 
 	def tearDOWN(self):
-		print ("test end")
+		print ("basemanage end")
 
 if __name__ == '__main__':
-	unittest.main()    #main()方法使用TestLoader类搜索所有包含在该模块中以‘’test‘’命名的测试方法，并自动执行他们
+	unittest.main()    #main()方法使用TestLoader类搜索所有包含在该模块中以‘’basemanage‘’命名的测试方法，并自动执行他们
 

@@ -9,7 +9,7 @@ class MeiOne(unittest.TestCase):
     def setUp(self):
 
         self.driver = webdriver.Chrome()
-        self.driver.get("http://saas.test.mei1.info")
+        self.driver.get("http://saas.basemanage.mei1.info")
         self.driver.maximize_window()
         self.driver.implicitly_wait(2)
 

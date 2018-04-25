@@ -10,9 +10,9 @@ import unittest
 class TestSub(unittest.TestCase):
 
 	def setUp(self):
-		print ("test case start")
+		print ("basemanage case start")
 	def tearDown(self):
-		print ("test case end")
+		print ("basemanage case end")
 
 	def test_sub(self):
 		j = Count(2,3)

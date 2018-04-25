@@ -21,7 +21,7 @@ sender = 'jhbnanyou@163.com'
 receiver = 'haibo.ji@mei1.com'
 
 # 发送邮件主题
-subject = 'Python email test'
+subject = 'Python email basemanage'
 
 # 发送邮件附件
 sendfile = open('D:\\testpro\\report\\log.txt','rb').read()

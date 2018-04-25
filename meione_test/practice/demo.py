@@ -9,7 +9,7 @@ class MeiOne(object):
     driver.implicitly_wait(10)
 
     def open_meione(self):
-        self.driver.get("http://saas.test.mei1.info")
+        self.driver.get("http://saas.basemanage.mei1.info")
         self.driver.maximize_window()
         time.sleep(1)
 
@@ -26,7 +26,7 @@ class MeiOne(object):
             assert u'美问' in title_string
             print ('Test pass.')
         except Exception as e:
-            print ('test fail')
+            print ('basemanage fail')
 
     def refresh(self):
         self.driver.refresh()

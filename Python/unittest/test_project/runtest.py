@@ -9,7 +9,7 @@ import unittest
 import time
 
 test_dir  = "./"
-discover = unittest.defaultTestLoader.discover(test_dir,pattern = "test*.py")
+discover = unittest.defaultTestLoader.discover(test_dir,pattern = "basemanage*.py")
 
 if __name__ == '__main__':
 

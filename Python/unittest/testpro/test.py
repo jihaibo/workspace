@@ -21,15 +21,15 @@ class Mytest(unittest.TestCase):
 
 	@unittest.skip("直接跳过")
 	def test_skip(self):
-		print "test aaa"
+		print "basemanage aaa"
 
 	@unittest.skipIf(3 > 2,"当条件为True时跳过")
 	def test_skip_if(self):
-		print "test bbb"
+		print "basemanage bbb"
 
 	@unittest.skipUnless(3 > 2,"当条件为True时执行测试")
 	def test_skip_unless(self):
-		print ("test ccc")
+		print ("basemanage ccc")
 
 	@unittest.expectedFailure           # 测试标记为失败。不管执行结果是否失败，统一标记为失败
 	def test_expected_failure(self):

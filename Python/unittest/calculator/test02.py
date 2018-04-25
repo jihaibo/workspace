@@ -11,7 +11,7 @@ import unittest
 class TestCount(unittest.TestCase):
 
 	def setUP(self):
-		print ("test start")
+		print ("basemanage start")
 
 	def test_add(self):
 		j = Count(2,3)
@@ -22,7 +22,7 @@ class TestCount(unittest.TestCase):
 		self.assertEqual(j.add(), 118,msg="输入的结果不相等118")
 
 	def tearDOWN(self):
-		print ("test end")
+		print ("basemanage end")
 
 if __name__ == '__main__':
 	#构造测试集
