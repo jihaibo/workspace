@@ -1,10 +1,20 @@
 # -*- coding:utf-8 -*-
 
 import time
+
+'''
+import imp
+basepage = imp.load_source('basepage','D:/workspace/meione_test/mei1_unittest/project/basemanage/basepage.py')
+import basepage
+'''
+
 import sys
-from selenium import webdriver
-sys.path.append('/path/to/project/')
+sys.path.append('D:/workspace/meione_test/mei1_unittest/project/')
 from basemanage.basepage import BasePage
+
+from selenium import webdriver
+
+
 
 
 class BaiduSearch(object):
