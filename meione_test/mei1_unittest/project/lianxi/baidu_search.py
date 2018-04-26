@@ -32,9 +32,11 @@ class BaiduSearch(object):
     def test_search(self):
         self.driver.find_element_by_id('kw').send_keys("Selenium")
         time.sleep(1)
+        self.basepage.take_screenshot()
         self.basepage.back()
         self.basepage.forward()
         self.basepage.quit_browser()
+        print "end test"
 
 baidu = BaiduSearch()
 baidu.open_baidu()

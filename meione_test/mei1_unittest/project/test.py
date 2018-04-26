@@ -1,8 +1,22 @@
 # -*- coding: utf-8 -*-
 
-# import sys
-# sys.path.append("./model")
-from model import new_count
+import ConfigParser
+import os
 
-test = new_count.B()
-test.add(2,5)
+class TestReadConfigFile(object):
+
+    def get_value(self):
+        root_dir = os.path.dirname(os.path.abspath('.')) #获取项目根目录的相对路径
+        print root_dir
+
+        config = ConfigParser.ConfigParser()
+        file_path = root_dir + '/project/config/cofig.ini'
+        config.read(file_path)
+
+        browser = config.get("browserType","browserName")
+        url = config.get("testServer","URL")
+
+        return(browser,url)
+
+trcf = TestReadConfigFile()
+print trcf.get_value()
