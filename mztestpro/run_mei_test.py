@@ -34,7 +34,7 @@ def new_report(testreport):
 
 if __name__ =='__main__':
     now = time.strftime("%Y-%m-%d %H_%M_%S")
-    filename = './bbs/report/'+ now + 'result.html'
+    filename = './bbs/report/result/'+ now + 'result.html'
     fp = open(filename,'wb')
     runner = HTMLTestRunner(stream=fp,
                             title=u"美问saas自动化测试报告",
@@ -43,6 +43,6 @@ if __name__ =='__main__':
                                                    pattern='*_sta.py')
     runner.run(discover)
     fp.close() # 关闭生成的报告
-    file_path = new_report('./bbs/report/')  # 查找新生成的报告
+    file_path = new_report('./bbs/report/result/')  # 查找新生成的报告
     send_mail(file_path)  #调用发邮件模块
 
