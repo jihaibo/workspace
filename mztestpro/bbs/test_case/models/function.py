@@ -2,7 +2,7 @@
 from selenium import webdriver
 import os
 
-#jietu
+#screenshots
 def insert_img(driver,file_name):
     base_dir = os.path.dirname(os.path.dirname(__file__))
     base_dir = str(base_dir)

@@ -1,5 +1,5 @@
-# -*- coding:utf-8 -*-
-_author_= "jhb"
+# -*- coding: utf-8 -*-
+
 from HTMLTestRunner import HTMLTestRunner
 from email.mime.text import MIMEText
 from email.header import Header
@@ -15,12 +15,12 @@ def send_mail(file_new):
     f.close()
 
     msg = MIMEText(mail_body,'html','utf-8')
-    msg['Subject'] = Header("自动化测试报告",'utf-8')
+    msg['Subject'] = Header(u"自动化测试报告",'utf-8')
 
     smtp = smtplib.SMTP()
     smtp.connect("smtp.163.com")
     smtp.login('jhbnanyou@163.com',"yanzi104674")
-    smtp.sendmail("jhbnanyou@163.com","receive@163.com",msg.as_string())
+    smtp.sendmail("jhbnanyou@163.com","haibo.ji@mei1.com",msg.as_string())
     smtp.quit()
     print ('email has send out !')
 
@@ -37,7 +37,7 @@ if __name__ =='__main__':
     filename = './bbs/report/result/'+ now + 'result.html'
     fp = open(filename,'wb')
     runner = HTMLTestRunner(stream=fp,
-                            title=u"美问saas自动化测试报告",
+                            title=u'美问saas自动化测试报告',
                             description=u'环境：window 10 浏览器：chrome')
     discover = unittest.defaultTestLoader.discover('./bbs/test_case',
                                                    pattern='*_sta.py')
