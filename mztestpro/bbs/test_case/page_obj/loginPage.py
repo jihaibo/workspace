@@ -46,7 +46,7 @@ class login(Page):
     def login_finalButton(self):
         self.find_element(*self.login_finalButton_locc).click()
 
-    #定义统一登录入口
+    #登录测试
     def user_login(self,username ="18721527961",password="jhb104674"):
         """
         获取的用户名登录密码
@@ -60,7 +60,7 @@ class login(Page):
         self.login_button()
         #self.login_selsctEmployee()
         #self.login_finalButton()
-        sleep(3)
+        sleep(1)
 
     #用户密码或者账号错误
     def login_error_hint(self):
@@ -69,6 +69,24 @@ class login(Page):
     #用户登录成功
     def login_success(self):
         return self.driver.title
+
+
+    #统一登录入口
+    def user_comm_login(self,username="18721527961",password='jhb104674'):
+        """
+        用户登录入口（用户名、密码）
+        :param username:
+        :param password:
+        :return:
+        """
+        self.open()
+        self.login_username(username)
+        self.login_password(password)
+        self.login_button()
+        sleep(1)
+        self.login_selsctEmployee()
+        self.login_finalButton()
+        sleep(3)
 
 
 
