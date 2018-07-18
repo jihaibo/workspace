@@ -62,7 +62,7 @@ while True:
             num = raw_input("您的选择无效，请重新选择：")
             num = int(num)
         if num ==1:
-            student_list.clear()
+            del student_list[:]
         else:
             index = raw_input('请输入您要删除的学员序号：')
             index = int(index)
