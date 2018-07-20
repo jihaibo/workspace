@@ -34,33 +34,33 @@ try:
 
 
 	try:
-		
+
 		#执行新建表语句
-		#cursor.execute(sql_create)
+		cursor.execute(sql_create)
 		
 		#执行插入数据语句
-#		cursor.execute(sql_insert)
-#		print cursor.rowcount       #查看是否对数据行数
+		cursor.execute(sql_insert)
+		print cursor.rowcount       #查看是否对数据行数
 
                  
 		#执行出查询语句
-#		cursor.execute(sql_select)    
-#		print cursor.rowcount    #查看是否对数据行数
-#		rs = cursor.fetchall()  #取出所有数据
-#		print rs
-#		for row in rs:
-#			print "userid = %s,username = %s" % row
-#		rs = cursor.fetchone()   #获取第一条数据
+		cursor.execute(sql_select)
+		print cursor.rowcount    #查看是否对数据行数
+		rs = cursor.fetchall()  #取出所有数据
+		print rs
+		for row in rs:
+			print "userid = %s,username = %s" % row
+		rs = cursor.fetchone()   #获取第一条数据
 
 
 
                   #执行更新语句
-#		cursor.execute(sql_update)
-#		rs = cursor.fetchall()
-#		print rs
+		cursor.execute(sql_update)
+		rs = cursor.fetchall()
+		print rs
 
                   #执行删除语句
-#		cursor.execute(sql_delete)
+		cursor.execute(sql_delete)
 
 	except Exception as e:
 		print e
