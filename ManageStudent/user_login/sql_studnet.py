@@ -7,7 +7,7 @@ import MySQLdb
 
 class Mysqlhelper:
 
-    #初始化参数
+    # 初始化参数
     def __init__(self,user,passwd,db,host='127.0.0.1',port=3309,charset='utf8'):
         self.host = host
         self.port = port
@@ -16,7 +16,7 @@ class Mysqlhelper:
         self.db = db
         self.charset = charset
 
-    #连接数据库
+    # 连接数据库
     def open(self):
         self.conn = MySQLdb.connect(
             host = self.host,
@@ -28,12 +28,12 @@ class Mysqlhelper:
         )
         self.cursor = self.conn.cursor()
 
-    #关闭数据库
+    # 关闭数据库
     def close(self):
         self.cursor.close()
         self.conn.close()
 
-    #增删改
+    # 增删改
     def cud(self,sql,params):
         try:
             self.open()
@@ -45,7 +45,7 @@ class Mysqlhelper:
         except Exception as e:
             print e
 
-    #查询获取多个值
+    # 查询获取多个值
     def see_all(self,sql,params=()):
         try:
             self.open()
