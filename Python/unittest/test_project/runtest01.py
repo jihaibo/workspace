@@ -29,7 +29,7 @@ def send_mail(file_new):
 
 	smtp = smtplib.SMTP()
 	smtp.connect("smtp.163.com")
-	smtp.login("jhbnanyou@163.com","jhb104674")
+	smtp.login("jhbnanyou@163.com","yanzi104674")
 	smtp.sendmail("jhbnanyou@163.com","haibo.ji@mei1.com",msg.as_string())
 	smtp.quit()
 	print("email has send out  !")
