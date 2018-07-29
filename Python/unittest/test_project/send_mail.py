@@ -14,7 +14,7 @@ from email.mime.multipart import MIMEMultipart
 smtpserver =  'smtp.163.com'
 # 发送邮件用户/密码
 user = 'jhbnanyou@163.com'
-password = 'jhb104674'
+password = 'yanzi104674'
 # 发送邮箱
 sender = 'jhbnanyou@163.com'
 # 接受邮箱
