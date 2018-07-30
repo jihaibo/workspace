@@ -1,0 +1,23 @@
+diff a/.idea/workspace.xml b/.idea/workspace.xml	(rejected hunks)
+@@ -2,21 +2,7 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="f6771298-2647-475e-8960-3234a87f7b00" name="Default" comment="">
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClass.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassAttribute01.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassAttribute02.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassAttribute03.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassAttribute04.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassMethod01.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassMethod02.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassMethod03.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassMethod04.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassMethod05.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassMethod06.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/MyClassMethod07.py" />
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebPractice/web_manage/apple.py" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebPractice/Reptilian/demo.py" afterPath="$PROJECT_DIR$/WebPractice/Reptilian/demo.py" />
+     </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="TRACKING_ENABLED" value="true" />
