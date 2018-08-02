@@ -4,7 +4,7 @@ time = '2018-8-1'
 """
 服務器端的構建
 
-構建一個小型服務器
+構建一個小型服务器
 """
 import socket
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)  # 生成socket對象
